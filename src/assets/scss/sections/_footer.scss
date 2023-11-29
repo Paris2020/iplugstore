@@ -1,3 +1,45 @@
 .footer {
-    
+    padding: 4rem 0;
+    background: var(--gradient-header);
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .socials {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+                    margin: 0 2rem;
+
+                    a {
+                        .icon {
+                            svg {
+                                width: 4rem;
+                                height: 4rem;
+                                fill: var(--color-black);
+                                transition: all ease-in-out .3s;
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                fill: var(--main-bg)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .agency {
+            color: var(--color-black);
+            font-weight: var(--font-weight-light);
+        }
+    }
 }

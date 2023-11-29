@@ -8,7 +8,11 @@
 
 	// colors
 	--color-white: 				#FFFFFF;
-	--color-black: 				#10090A;
+	--color-black: 				#000000;
 	--color-dark-grey: 			#4C4F64;
 	--color-grey: 				#848185;
+
+	--main-bg: 					rgb(120,135,190);
+	--gradient-header: 			linear-gradient(90deg, rgba(120,135,190,1) 0%, rgba(143,176,200,1) 35%, rgba(162,213,208,1) 100%);
+	
 }
