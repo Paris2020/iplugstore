@@ -11,13 +11,9 @@
     }
 
     .error {
-        margin: 2rem 0;
+        margin-bottom: 2rem;
         padding-left: 2rem;
         color: var(--color-red);
         font-weight: var(--font-weight-bold);
     }
-}
-
-.errors {
-    margin: 3rem 0;
 }

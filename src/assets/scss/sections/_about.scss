@@ -1,0 +1,17 @@
+.about {
+    padding-top: 0;
+    overflow: visible;
+
+    .card-numbers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -8rem auto 0;
+
+        .card {
+            &:nth-of-type(even) {
+                margin: 0 2rem;
+            }
+        }
+    }
+}

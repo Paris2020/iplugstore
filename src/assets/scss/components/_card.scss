@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1.5rem;
+    background: var(--gradient-header);
+
+    .count {
+        font-size: 4.2rem;
+        line-height: 3.2rem;
+        color: var(--color-black);
+        font-weight: var(--font-weight-medium);
+        margin-bottom: 1rem;
+    }
+
+    .icon {
+        width: 4rem;
+        height: 4rem;
+
+        svg {
+            width: 4rem;
+            height: 4rem;
+            fill: var(--color-black)
+        }
+    }
+
+    p {
+        color: var(--color-black);
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
