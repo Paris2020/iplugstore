@@ -26,12 +26,6 @@
                                 transition: all ease-in-out .3s;
                             }
                         }
-
-                        &:hover {
-                            svg {
-                                fill: var(--main-bg)
-                            }
-                        }
                     }
                 }
             }

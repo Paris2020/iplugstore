@@ -1,0 +1,23 @@
+.input-wrapper {
+
+    .form-input {
+        width: 100%;
+        max-width: 100%;
+        height: 6rem;
+        padding: 1rem 2rem;
+        border: .2rem solid var(--color-black);
+        font-weight: var(--font-weight-medium);
+        margin-bottom: 2rem;
+    }
+
+    .error {
+        margin: 2rem 0;
+        padding-left: 2rem;
+        color: var(--color-red);
+        font-weight: var(--font-weight-bold);
+    }
+}
+
+.errors {
+    margin: 3rem 0;
+}

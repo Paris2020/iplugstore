@@ -98,18 +98,22 @@ h2 {
 }
 
 h3 {
-    font-size: 4.2rem;
-    line-height: 4.6rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
 	font-weight: var(--font-weight-medium);
     color: var(--color-white);
 	margin-bottom: 1.5rem;
 }
 
 h4 {
-	font-size: 2.2rem;
-    line-height: 2.6rem;
+	font-size: 1.8rem;
+    line-height: 1.2rem;
 	font-weight: var(--font-weight-medium);
 	color: var(--color-white);
+
+	&.black {
+		color: var(--color-black);
+	}
 }
 
 p {
@@ -138,7 +142,7 @@ ul,ol {
 	border: none;
 	font-size: 1.6rem;
 	line-height: 2rem;
-	//box-shadow: var(--color-blush) .4rem .4rem 0 0;
+	box-shadow: var(--color-dark-blue) .4rem .4rem 0 0;
 
 	&.small {
 		background-color: transparent;
@@ -157,7 +161,7 @@ ul,ol {
 		text-transform: uppercase;
 		font-weight: var(--font-weight-bold);
 		color: var(--color-white);
-		//background-color: var(--color-dark-pink);
+		background-color: var(--main-bg);
 	}
 
 	&.clear {
@@ -172,9 +176,13 @@ ul,ol {
 		border: .2rem solid transparent;
 
 		&:hover {
-			//color: var(--color-dark-pink);
+			color: var(--color-dark-blue);
 			background-color: transparent;
-			//border: .2rem solid var(--color-dark-pink);
+			border: .2rem solid var(--color-dark-blue);
 		}
 	}
+}
+
+.errors {
+
 }
