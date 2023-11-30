@@ -1,13 +1,14 @@
-<script setup>    
+<script setup>
+    import Icon from "./Icon.vue";
     const props = defineProps({
-        count: Number,
-        description: String
+        cards: Array
     })
 </script>
 
 <template>
-    <div class="card">
-        <span class="count">{{ props.count }}</span>
-        <h4>{{ props.description}}</h4>
+    <div class="card" v-for="(card, index) in props.cards">
+        <span class="count">{{ card.count }}</span>
+        <p>{{ card.description }}</p>
+        <icon :name="card.icon" />
     </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-    import NavSection from "../components/Nav.vue"
+    import NavSection from "../components/Nav.vue";
 </script>
 
 

@@ -69,16 +69,6 @@
                 <VInputField name="contact" type="text" placeholder="Contact number" />
                 <VInputField name="subject" type="text" placeholder="Subject" />
 
-                <!-- FORM: ERRORS -->
-                <div class="errors" v-if="Object.keys(formErrors).length">
-                    <h4 class="black">Please correct the following errors:</h4>
-                    <ul>
-                        <li v-for="(message, field) in formErrors" :key="field" class="error">
-                            {{ message }}
-                        </li>
-                    </ul>
-                </div>
-                <!-- END.FORM: ERRORS -->
                 <div class="success" v-if="state.success"> 
                     <h3 class="black">Message sent!</h3>
                 </div>
