@@ -62,7 +62,8 @@
 <template>
     <section class="contact">
         <div class="wrapper">
-            <VForm class="form catering" :validation-schema="schema" :initial-values="initialValues" v-slot="{ meta: formMeta, errors: formErrors }" @submit="handleSubmit">
+            <h2>Get in touch with us!</h2>
+            <VForm class="form" :validation-schema="schema" :initial-values="initialValues" v-slot="{ meta: formMeta, errors: formErrors }" @submit="handleSubmit">
                 <VInputField name="name" type="text" placeholder="Full name" />
                 <VInputField name="email" type="email" placeholder="Email address" />
                 <VInputField name="contact" type="text" placeholder="Contact number" />
@@ -70,7 +71,7 @@
 
                 <!-- FORM: ERRORS -->
                 <div class="errors" v-if="Object.keys(formErrors).length">
-                    <h3 class="black">Please correct the following errors:</h3>
+                    <h4 class="black">Please correct the following errors:</h4>
                     <ul>
                         <li v-for="(message, field) in formErrors" :key="field" class="error">
                             {{ message }}
