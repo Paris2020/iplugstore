@@ -39,6 +39,10 @@
                     nesciunt fugiat porro vitae iusto ea ullam nostrum, optio tempora itaque 
                     accusamus incidunt ipsa at officiis recusandae. Reprehenderit, perferendis illo.</p>
             </div>
+
+            <div class="video-reel">
+                <h3>Video here...</h3>
+            </div>
         </div>
     </section>
 </template>

@@ -81,10 +81,10 @@
 </script>
 
 <template>
-    <section class="catalogue">
+    <section class="catalog">
         <div class="wrapper">
             <h2>All Products</h2>
-
+            
             <div class="products">
                 <phone-card :iPhones="state.catalogue"/>
             </div>

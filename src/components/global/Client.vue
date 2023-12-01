@@ -1,6 +1,5 @@
 <script setup>
     import { reactive } from "vue";
-    import Icon from "./Icon.vue";
 
     const props = defineProps({
         clients: Array
@@ -9,8 +8,7 @@
 
 <template>
     <div class="client" v-for="(client, index) in props.clients">
-        <!-- <icon name="avatar" /> -->
-        <span class="avatar"></span>
+        <img :src="`/images/clients/${client.avatar}.png`" width="200" class="avatar" alt="Client Avatar/Image">
         <div class="popup">
             <dl>
                 <dt>{{ client.name }}</dt>

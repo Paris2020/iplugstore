@@ -7,22 +7,22 @@ import { reactive } from "vue";
         clients: [
             {
                 id: 0,
-                name: "Lisa M",
-                avatar: "anonymous",
+                name: "Nombulelo D",
+                avatar: "avatar-female-dark",
                 comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
                 location: "Johannesburg, GP"
             },
             {
                 id: 1,
-                name: "Nombulelo D",
-                avatar: "anonymous",
+                name: "Lisa M",
+                avatar: "avatar-female-light",
                 comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
                 location: "Durban, KZN"
             },
             {
                 id: 2,
-                name: "Tania K",
-                avatar: "anonymous",
+                name: "Derick K",
+                avatar: "avatar-male-beared",
                 comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
                 location: "Cape Town, WC"
             },
@@ -33,7 +33,9 @@ import { reactive } from "vue";
 <template>
     <section class="clients">
         <div class="wrapper">
-            <div class="big-circle"></div>
+            <div class="big-circle">
+                <img src="/images/logo.png" width="150" alt="South African Flag">
+            </div>
             <div class="clients-wrap">
                 <client-comment :clients="state.clients"/>
             </div>
