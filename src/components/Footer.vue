@@ -19,9 +19,9 @@
                     <li><a href="https://www.instagram.com/_iplugstore" target="_blank"><icon name="instagram" /></a></li>
                 </ul>
             </div>
-            <a href="http://mosekiwebagency.co.za/" target="_blank" class="agency">
-                <strong>Moseki Web Agency</strong> &copy; {{ state.date.getFullYear() }} All Rights Reserved
-            </a>
+            <p class="copyright">
+                <strong><a href="http://mosekiwebagency.co.za/" target="_blank">Moseki Web Agency</a></strong> &copy; {{ state.date.getFullYear() }} All Rights Reserved | <a href="/files/refund-policy.pdf">Refund Policy</a> | <a href="/files/terms-and-conditions.pdf">Terms of Service</a>
+            </p>
         </div>
     </footer>
 </template>
