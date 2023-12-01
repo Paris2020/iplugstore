@@ -1,0 +1,48 @@
+.iphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    dl {
+        dt {
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            color: var(--color-black);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: 1rem;
+        }
+
+        dd {
+            &.price {
+                font-size: 1.8rem;
+                line-height: 1.4rem;
+                font-weight: var(--font-weight-medium);
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .interact {
+        display: flex;
+        align-items: center;
+        color: var(--color-black);
+        font-weight: var(--font-weight-medium);
+
+        a {
+            color: var(--color-black);
+        }
+
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+                fill: var(--color-white)
+            }
+        }
+    }
+}

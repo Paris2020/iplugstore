@@ -12,6 +12,7 @@
             ul {
                 display: flex;
                 align-items: center;
+                margin-top: 0;
 
                 li {
                     list-style: none;
@@ -31,9 +32,16 @@
             }
         }
 
-        .agency {
+        .copyright {
             color: var(--color-black);
+            font-size: 1.4rem;
+            line-height: 1.8rem;
             font-weight: var(--font-weight-light);
+
+            a {
+                color: var(--color-black);
+                cursor: pointer;
+            }
         }
     }
 }

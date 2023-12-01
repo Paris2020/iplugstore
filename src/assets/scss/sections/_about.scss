@@ -2,6 +2,15 @@
     padding-top: 0;
     overflow: visible;
 
+    h2, p {
+        text-align: center;
+    }
+
+    .more-info {
+        width: 100rem;
+        margin: 6rem auto 0;
+    }
+
     .card-numbers {
         display: flex;
         align-items: center;

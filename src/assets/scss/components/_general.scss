@@ -142,17 +142,15 @@ ul,ol {
 	border: none;
 	font-size: 1.6rem;
 	line-height: 2rem;
+	background-color: var(--main-bg);
+	transition: all ease-in-out .3s;
 	box-shadow: var(--color-dark-blue) .4rem .4rem 0 0;
 
 	&.small {
-		background-color: transparent;
-        //color: var(--color-dark-pink);
         font-weight: var(--font-weight-bold);
-        //border: 0.2rem solid var(--color-dark-pink);
         padding: 0.5rem;
         text-transform: uppercase;
-        width: 12rem;
-
+        width: 14rem;
 	}
 
 	&.large {
@@ -161,18 +159,10 @@ ul,ol {
 		text-transform: uppercase;
 		font-weight: var(--font-weight-bold);
 		color: var(--color-white);
-		background-color: var(--main-bg);
-	}
-
-	&.clear {
-		//color: var(--color-dark-pink);
-		background-color: transparent;
-		//border: .2rem solid var(--color-dark-pink);
 	}
 
 	&.unclear {
 		color: var(--color-white);
-		//background-color: var(--color-dark-pink);
 		border: .2rem solid transparent;
 
 		&:hover {

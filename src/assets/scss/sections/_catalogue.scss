@@ -1,0 +1,22 @@
+.catalogue {
+
+    h2 {
+        text-align: center;
+    }
+
+    .products {
+        display: grid;
+        gap: 2rem;
+        margin-top: 8rem;
+        justify-items: center;
+        grid-template-columns: repeat(3, 44rem);
+
+        .iphone {
+            width: 100%;
+        }
+    }
+
+    .btn {
+        margin: 8rem auto 0;
+    }
+}
