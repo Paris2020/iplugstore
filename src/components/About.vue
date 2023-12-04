@@ -1,5 +1,5 @@
 <script setup>
-    import { reactive } from "vue";
+    import { reactive, onMounted } from "vue";
     import CardBox from "../components/global/Card.vue";
 
     const state = reactive({
@@ -12,7 +12,7 @@
             },
             {
                 id: 1,
-                count: 100 + "%",
+                count: 100,
                 icon: "delivery",
                 description: "Delivery"
             },
