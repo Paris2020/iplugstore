@@ -13,13 +13,16 @@
 
             li {
                 margin: 0 1.5rem;
+
                 a {
                     color: var(--color-white);
                     font-weight: var(--font-weight-bold);
                     transition: all ease-in-out .2s;
+                    padding-bottom: .1rem;
 
                     &:hover {
                         color: var(--main-bg);
+                        border-bottom: .2rem solid var(--color-white);
                     }
                 }
             }
