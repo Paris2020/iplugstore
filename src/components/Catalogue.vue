@@ -6,7 +6,7 @@
         catalogue: [
             {
                 id: 0,
-                title: "iPhone 11 - CPO",
+                title: "iPhone 11",
                 price: "8,500.00",
                 likes: 0,
                 inStore: true,
@@ -14,7 +14,7 @@
             },
             {
                 id: 1,
-                title: "iPhone 11 Pro Max - CPO",
+                title: "iPhone 11 Pro Max",
                 price: "10,000.00",
                 likes: 0,
                 inStore: true,
@@ -22,7 +22,7 @@
             },
             {
                 id: 2,
-                title: "iPhone 12 - CPO",
+                title: "iPhone 12",
                 price: "10,500.00",
                 likes: 0,
                 inStore: true,
@@ -30,7 +30,7 @@
             },
             {
                 id: 3,
-                title: "iPhone 12 Pro Max - CPO",
+                title: "iPhone 12 Pro Max",
                 price: "12,000.00",
                 likes: 0,
                 inStore: true,
@@ -38,7 +38,7 @@
             },
             {
                 id: 4,
-                title: "iPhone 13 - CPO",
+                title: "iPhone 13",
                 price: "13,500.00",
                 likes: 0,
                 inStore: true,
@@ -46,7 +46,7 @@
             },
             {
                 id: 5,
-                title: "iPhone 14 - CPO",
+                title: "iPhone 14",
                 price: "18,500.00",
                 likes: 0,
                 inStore: true,
@@ -54,7 +54,7 @@
             },
             {
                 id: 6,
-                title: "iPhone 14 Pro Max - CPO",
+                title: "iPhone 14 Pro Max",
                 price: "24,500.00",
                 likes: 0,
                 inStore: true,
@@ -62,7 +62,7 @@
             },
             {
                 id: 7,
-                title: "iPhone X - CPO",
+                title: "iPhone X",
                 price: "6,900.00",
                 likes: 0,
                 inStore: true,
@@ -70,20 +70,20 @@
             },
             {
                 id: 8,
-                title: "iPhone XS - CPO",
+                title: "iPhone XS",
                 price: "8,000.00",
                 likes: 0,
                 inStore: true,
                 image: "iphone-xs-cpo",
             },
-        ]
+        ],
     })
 </script>
 
 <template>
     <section class="catalog">
         <div class="wrapper">
-            <h2>All Products</h2>
+            <h2>All Products - CPO</h2>
             
             <div class="products">
                 <phone-card :iPhones="state.catalogue"/>

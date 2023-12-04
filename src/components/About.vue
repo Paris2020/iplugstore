@@ -1,6 +1,8 @@
 <script setup>
     import { reactive, onMounted } from "vue";
+    import Icon from "./global/Icon.vue";
     import CardBox from "../components/global/Card.vue";
+    import LiteYouTubeEmbed from 'vue-lite-youtube-embed';
 
     const state = reactive({
         cards: [
@@ -41,7 +43,10 @@
             </div>
 
             <div class="video-reel">
-                
+                <LiteYouTubeEmbed 
+                    id="XHTrLYShBRQ" width="952" height="500"
+                    title="Introducing iPhone 15 | WOW | Apple"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
             </div>
         </div>
     </section>
