@@ -9,6 +9,7 @@ const app = createApp(App);
 
 app.use(VeeValidateComponents)
 app.use(VeeValidateRules)
+
 app.component("AnimatedCounter", AnimatedCounter)
 
 app.mount("#app");

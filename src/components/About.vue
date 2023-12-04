@@ -41,7 +41,7 @@
             </div>
 
             <div class="video-reel">
-                <h3>Video here...</h3>
+                
             </div>
         </div>
     </section>
