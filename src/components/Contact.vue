@@ -68,6 +68,10 @@
                 <VInputField name="email" type="email" placeholder="Email address" />
                 <VInputField name="contact" type="text" placeholder="Contact number" />
                 <VInputField name="subject" type="text" placeholder="Subject" />
+                
+                <div class="input-wrapper">
+                    <textarea name="message" class="form-textarea" rows="8" placeholder="Message"></textarea>
+                </div>
 
                 <div class="success" v-if="state.success"> 
                     <h3 class="black">Message sent!</h3>

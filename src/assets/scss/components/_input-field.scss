@@ -1,6 +1,6 @@
 .input-wrapper {
 
-    .form-input {
+    .form-input, .form-textarea {
         width: 100%;
         max-width: 100%;
         height: 6rem;
@@ -8,6 +8,10 @@
         border: .2rem solid var(--color-black);
         font-weight: var(--font-weight-medium);
         margin-bottom: 2rem;
+    }
+
+    .form-textarea {
+        height: 20rem;
     }
 
     .error {
