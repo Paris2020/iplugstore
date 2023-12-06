@@ -1,18 +1,16 @@
 <script setup>
-    import { onMounted, reactive, computed } from 'vue';
-    import Icon from './Icon.vue';
+    import { onMounted, reactive, computed } from 'vue'
+    import Icon from './Icon.vue'
     import useClipboard from 'vue-clipboard3'
+    import { useStore } from "vuex"
+
+    const store = useStore();
 
     const props = defineProps({
         iPhones: Array
     });
 
     const { toClipboard } = useClipboard();
-    const state = reactive({
-        incrementLikes: 0,
-        share: ""
-    });
-
 
     // A link to be shared
     const copyLink = async(link) => {
@@ -26,9 +24,9 @@
 
 
     // Increment likes
-    const CountLikes = computed(() => {
-
-    });
+    const incrementLikes = (product) => {
+        store.commit('incrementCount', product)
+    }   
 </script>
 
 
@@ -45,8 +43,11 @@
                 <dd class="price">{{ phone.price }} ZAR</dd> 
             </dl>
             <div class="interact">
-                <a :href="`/#catalogue/${phone.image}`" @click="copyLink(`/#catalogue/${phone.image}`)"><icon name="share" /></a>
-                <span class="count-wrap"><icon name="heart" />{{ CountLikes }}</span>
+                <a :href="`/#catalogue/${phone.image}`" @click="copyLink(`/#catalogue/${phone.image}`)"><icon name="copy" /></a>
+                <span class="count-wrap">
+                    {{ phone.likes }}
+                    <icon name="heart" :id="phone.id" @click="incrementLikes(index)"/>
+                </span>
             </div>
         </div>
     </div>
