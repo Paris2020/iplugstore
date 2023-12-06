@@ -8,15 +8,6 @@
     let products = computed(()=> {
         return store.state.products;
     })
-
-    const initializeAllLikes = () => {
-        store.commit['initializeLikes']
-    }
-
-    // Initialize all iPhone components to 0
-    onMounted (() => {
-        initializeAllLikes()
-    })
 </script>
 
 <template>

@@ -5,12 +5,11 @@
     import { useStore } from "vuex"
 
     const store = useStore();
+    const { toClipboard } = useClipboard();
 
     const props = defineProps({
         iPhones: Array
     });
-
-    const { toClipboard } = useClipboard();
 
     // A link to be shared
     const copyLink = async(link) => {
@@ -21,7 +20,6 @@
             console.error(e)
         }
     }
-
 
     // Increment likes
     const incrementLikes = (product) => {

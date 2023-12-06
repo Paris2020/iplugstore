@@ -44,9 +44,8 @@
 
             <div class="video-reel">
                 <LiteYouTubeEmbed 
-                    id="XHTrLYShBRQ" width="952" height="500"
-                    title="Introducing iPhone 15 | WOW | Apple"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+                    id="XHTrLYShBRQ"
+                    title="Introducing iPhone 15 | WOW | Apple" />
             </div>
         </div>
     </section>
