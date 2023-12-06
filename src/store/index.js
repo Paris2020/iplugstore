@@ -83,13 +83,11 @@ export default createStore({
             state.products.forEach(product => {
                 return product.likes
             })
-            //return state.count
         }
     },
     mutations: {
         incrementCount: (state, product) => {
             state.products[product].likes++;
-            //state.count++
         },
     },
 })
