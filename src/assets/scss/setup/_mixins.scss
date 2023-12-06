@@ -4,6 +4,16 @@
 	text-overflow: ellipsis;
 }
 
+@keyframes animName {
+	0%{
+	   transform: rotate(0deg);
+	}
+   	100%{
+	   transform: rotate(360deg);
+	}
+}
+
+
 @mixin placeholder() {
 	::-webkit-input-placeholder {
 		@content;

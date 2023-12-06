@@ -31,7 +31,7 @@
     
         .interact {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             flex-direction: column;
             justify-content: space-between;
             color: var(--color-black);
@@ -42,14 +42,32 @@
             }
     
             .icon {
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
     
                 svg {
                     width: 2.4rem;
                     height: 2.4rem;
                     fill: var(--color-white);
+                }
+            }
+
+            .count-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 6rem;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+
+                .icon {
+                    svg {
+                        fill: var(--color-white);
+                    }
                 }
             }
         }
