@@ -32,11 +32,20 @@
             font-size: 9rem;
             line-height: 7rem;
         }
+
+        @include break-point(mobile) {
+            font-size: 6rem;
+            line-height: 5rem;
+        }
     }
 
     h3 {
         text-align: center;
         font-weight: var(--font-weight-bold);
         margin-bottom: 3.5rem;
+
+        @include break-point(mobile) {
+            margin-bottom: 2.5rem;
+        }
     }
 }

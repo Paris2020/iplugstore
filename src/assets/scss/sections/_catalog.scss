@@ -19,6 +19,10 @@
             grid-template-columns: repeat(3, 22.9rem);
         }
 
+        @include break-point(mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         .iphone {
             width: 100%;
         }

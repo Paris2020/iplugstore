@@ -6,6 +6,12 @@
         align-items: center;
         justify-content: space-between;
 
+        .logo {
+            @include break-point(mobile) {
+                width: 4rem;
+            }
+        }
+
         ul.menu {
             list-style: none;
             display: flex;

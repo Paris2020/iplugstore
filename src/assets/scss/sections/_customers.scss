@@ -11,6 +11,11 @@
         padding-top: 22rem;
     }
 
+    @include break-point(mobile) {
+        padding-bottom: 50rem;
+        padding-top: 30rem;
+    }
+
     .big-circle {
         width: 50rem;
         height: 50rem;
@@ -26,9 +31,18 @@
         align-items: center;
         justify-content: center;
         //animation: animName 2s linear infinite;
+        @include break-point(mobile) {
+            width: 25rem;
+            height: 25rem;
+        }
 
         .iplugstore-tagline {
             border-radius: 50%;
+
+            @include break-point(mobile) {
+                width: 100%;
+                max-width: 20rem;
+            }
         }
     }
     
@@ -67,6 +81,11 @@
                     right: 20rem;
                 }
 
+                @include break-point(mobile) {
+                    top: -18rem;
+                    right: 0rem;
+                }
+
                 .popup {
                     @include break-point(tablet-landscape) {
                         right: 3rem;
@@ -95,6 +114,10 @@
                     bottom: -10rem;
                 }
 
+                @include break-point(mobile) {
+                    bottom: -22rem;
+                }
+
                 .popup {
                     left: -49rem;
 
@@ -113,7 +136,12 @@
 
             &:nth-of-type(3) {
                 bottom: -8rem;
-                left: 63rem; 
+                left: 63rem;
+                
+                @include break-point(mobile) {
+                    bottom: -45.5rem;
+                    left: 24rem;
+                }
                 
                 .popup {
                     top: 8rem;

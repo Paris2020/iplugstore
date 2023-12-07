@@ -5,6 +5,10 @@
     h2, p {
         text-align: center;
         padding: 0 4rem;
+
+        @include break-point(mobile) {
+            padding: 0;
+        }
     }
 
     .more-info {
@@ -21,11 +25,14 @@
         height: 50rem;
         margin: 6rem auto 0;
         background: var(--color-black);
-
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+
+        @include break-point(tablet-landscape) {
+            width: 100%;
+        }
         
         .yt-lite {
             display: flex;
@@ -55,9 +62,17 @@
         justify-content: center;
         margin: -20rem auto 0;
 
+        @include break-point(mobile) {
+            flex-direction: column;
+        }
+
         .card {
             &:nth-of-type(even) {
                 margin: 0 2rem;
+
+                @include break-point(mobile) {
+                    margin: 2rem 0;
+                }
             }
 
             &:nth-of-type(1),
