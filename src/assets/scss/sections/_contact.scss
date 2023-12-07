@@ -1,6 +1,10 @@
 .contact {
     padding: 14rem 0 12rem;
-    
+
+    @include break-point(tablet-landscape) {
+        padding: 10rem 0 12rem;
+    }
+
     .wrapper {
         display: flex;
         align-items: center;

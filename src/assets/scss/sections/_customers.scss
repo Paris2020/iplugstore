@@ -1,6 +1,11 @@
 .clients {
     padding-bottom: 15rem;
 
+    @include break-point(tablet-landscape) {
+        padding-bottom: 6rem;
+        padding-top: 12rem;
+    }
+
     .big-circle {
         width: 50rem;
         height: 50rem;
@@ -35,12 +40,36 @@
                 position: relative;
             }
 
+            .avatar {
+                position: relative;
+
+                @include break-point(tablet-landscape) {
+                    width: 15rem;
+                    position: absolute;
+                }
+            }
+
             &:nth-of-type(1) {
                 top: 0;
                 right: 10rem;
 
+                @include break-point(tablet-landscape) {
+                    right: 2rem;
+                }
+
+                .popup {
+                    @include break-point(tablet-landscape) {
+                        right: 3rem;
+                    }
+                }
+
                 .avatar {
-                    margin-right: -2rem;
+                    right: -2rem;
+
+                    @include break-point(tablet-landscape) {
+                        right: 17rem;
+                        top: -12rem;
+                    }
                 }
             }
 
@@ -50,6 +79,17 @@
 
                 .popup {
                     left: -49rem;
+
+                    @include break-point(tablet-landscape) {
+                        left: -30rem;
+                    }
+                }
+
+                .avatar {
+                    @include break-point(tablet-landscape) {
+                        top: -11.5rem;
+                        left: -30rem;
+                    }
                 }
             }
 
@@ -59,6 +99,17 @@
                 
                 .popup {
                     top: 8rem;
+
+                    @include break-point(tablet-landscape) {
+                        top: -2rem;
+                    }
+                }
+
+                .avatar {
+                    @include break-point(tablet-landscape) {
+                        top: -13.5rem;
+                        right: 0;
+                    }
                 }
             }
 
@@ -69,6 +120,7 @@
                 flex-direction: column;
                 border-radius: 2rem;
                 padding: 2rem;
+                background-color: var(--color-white);
                 border: .2rem solid var(--color-black);
 
                 dl {

@@ -11,6 +11,10 @@
         justify-items: center;
         grid-template-columns: repeat(3, 44rem);
 
+        @include break-point(tablet-landscape) {
+            grid-template-columns: repeat(3, 31.5rem);
+        }
+
         .iphone {
             width: 100%;
         }
