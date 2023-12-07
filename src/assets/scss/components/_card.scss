@@ -8,6 +8,10 @@
     border-radius: 1.5rem;
     background: var(--gradient-header);
 
+    @include break-point(tablet-portrait) {
+        width: 20rem;
+    }
+
     .count {
         font-size: 4.2rem;
         line-height: 3.2rem;

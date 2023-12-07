@@ -6,6 +6,11 @@
         padding-top: 12rem;
     }
 
+    @include break-point(tablet-portrait) {
+        padding-bottom: 10rem;
+        padding-top: 22rem;
+    }
+
     .big-circle {
         width: 50rem;
         height: 50rem;
@@ -57,6 +62,11 @@
                     right: 2rem;
                 }
 
+                @include break-point(tablet-portrait) {
+                    top: -11rem;
+                    right: 20rem;
+                }
+
                 .popup {
                     @include break-point(tablet-landscape) {
                         right: 3rem;
@@ -70,12 +80,20 @@
                         right: 17rem;
                         top: -12rem;
                     }
+
+                    @include break-point(tablet-portrait) {
+                        right: 4rem;
+                    }
                 }
             }
 
             &:nth-of-type(2) {
                 bottom: 20rem;
                 left: 32rem;
+
+                @include break-point(tablet-portrait) {
+                    bottom: -10rem;
+                }
 
                 .popup {
                     left: -49rem;
@@ -103,12 +121,22 @@
                     @include break-point(tablet-landscape) {
                         top: -2rem;
                     }
+                    
+                    @include break-point(tablet-portrait) {
+                        top: 2rem;
+                        right: 19rem;
+                    }
                 }
 
                 .avatar {
                     @include break-point(tablet-landscape) {
                         top: -13.5rem;
                         right: 0;
+                    }
+
+                    @include break-point(tablet-portrait) {
+                        top: -9.5rem;
+                        right: 20rem;
                     }
                 }
             }

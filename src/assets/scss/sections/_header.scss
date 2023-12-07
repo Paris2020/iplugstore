@@ -6,6 +6,10 @@
     height: 50rem;
     overflow: hidden;
 
+    @include break-point(tablet-portrait) {
+        height: 45rem;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -23,6 +27,11 @@
 
     h1 {
         margin-top: 7rem;
+
+        @include break-point(tablet-portrait) {
+            font-size: 9rem;
+            line-height: 7rem;
+        }
     }
 
     h3 {

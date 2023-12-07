@@ -86,7 +86,7 @@ h1 {
 h2 {
 	font-family: "Work Sans", sans-serif;
     font-size: 5rem;
-	line-height: 4rem;
+	line-height: 5rem;
 	font-weight: var(--font-weight-medium);
     color: var(--color-black);
 	margin-bottom: 3rem;
@@ -176,6 +176,10 @@ ul,ol {
 .form {
 	width: 80rem;
 	margin: 0 auto;
+
+	@include break-point(tablet-portrait) {
+		width: 100%;
+	}
 }
 
 .errors {
