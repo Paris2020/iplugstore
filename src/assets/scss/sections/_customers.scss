@@ -6,12 +6,20 @@
         height: 50rem;
         margin: 0 auto;
         border-radius: 50%;
-        background: var(--color-black);
+        background-color: var(--color-black);
+        background-image: url('/images/bg-banners/black-white.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border: .2rem solid var(--color-white);
         display: flex;
         align-items: center;
         justify-content: center;
         //animation: animName 2s linear infinite;
+
+        .iplugstore-tagline {
+            border-radius: 50%;
+        }
     }
     
     .clients-wrap {
