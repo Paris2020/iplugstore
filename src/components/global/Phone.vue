@@ -42,10 +42,10 @@
             </dl>
             <div class="interact">
                 <a :href="`/#catalogue/${phone.image}`" @click="copyLink(`/#catalogue/${phone.image}`)"><icon name="copy" /></a>
-                <span class="count-wrap">
+                <!--<span class="count-wrap">
                     {{ phone.likes }}
                     <icon name="heart" :id="phone.id" @click="incrementLikes(index)"/>
-                </span>
+                </span> -->
             </div>
         </div>
     </div>
