@@ -1,18 +1,15 @@
 <script setup>
     import { reactive } from "vue"
+    import Email from "../assets/smtp/smtp.js"
     import { object, string, ref as yupRef } from "yup"
     import { configure } from "vee-validate"
-    import VInputField from "./global/VInputField.vue"
-import VTextArea from "./global/VTextArea.vue";
+    import VInputField from "./global/VInputField.vue"  
+    import VTextArea from "./global/VTextArea.vue"
     
     const state = reactive({
         success: false,
     });
 
-    /*const existingEmail = async (value) => {
-        const result = await $fetch("/api/checkemail?email=" + value);
-        return result ? true : false;
-    }; */
 
     const handleSubmit = (values, actions) => {
 
@@ -24,16 +21,16 @@ import VTextArea from "./global/VTextArea.vue";
 
         let messageBody = `Full name: ${fullName} <br />
                            Email: ${emailAddress} <br />
-                           Email: ${subject} <br />
                            Cell no.: ${cellNumber} <br />
+                           Subject: ${subject} <br />
                            Message: ${commentMsg}`;
 
-        window.Email.send({
+        Email.send({
             Host : "smtp.elasticemail.com",
             Username : "dineo06.moseki@gmail.com",
-            Password : `${runtimeConfig.public.MAPBOX_PASSWORD}`,
+            Password : `AEFF8465F15A19BC63CEDB76E894D69FA06C`,
             To : 'llebohang600@gmail.com',
-            From : "dineo06.moseki@gmail.com",
+            From : `${fullName} - ${emailAddress}, ${cellNumber}`,
             Subject : `${subject}`,
             Body : messageBody }).then(message => {
         

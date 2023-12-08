@@ -76,7 +76,16 @@ export default createStore({
                 //inStore: true,
                 image: "iphone-xs-cpo",
             },
-        ]
+        ],
+        client: {
+            id: null,
+            full_name: null,
+            email: null,
+            contact: null,
+            subject: null,
+            message: null
+        },
+        clients:[]
     },
     getters: {
         getCounts: state => {
