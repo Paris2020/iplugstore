@@ -8,7 +8,7 @@
         cards: [
             {
                 id: 0,
-                count: 450,
+                count: 250,
                 icon: "mobile",
                 description: "Sold"
             },
@@ -20,7 +20,7 @@
             },
             {
                 id: 2,
-                count: 750,
+                count: 310,
                 icon: "customer",
                 description: "Customers"
             }
