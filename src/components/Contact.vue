@@ -1,8 +1,10 @@
 <script setup>
-    import { reactive } from "vue";
-    import { object, string, ref as yupRef } from "yup";
-    import { configure } from "vee-validate";
-    import VInputField from "./global/VInputField.vue";
+    import { reactive } from "vue"
+    import { object, string, ref as yupRef } from "yup"
+    import { configure } from "vee-validate"
+    import VInputField from "./global/VInputField.vue"
+import VTextArea from "./global/VTextArea.vue";
+    
     const state = reactive({
         success: false,
     });
@@ -18,11 +20,13 @@
         let emailAddress = values.email;
         let subject = values.subject
         let cellNumber = values.contact;
+        let commentMsg = values.message;
 
         let messageBody = `Full name: ${fullName} <br />
                            Email: ${emailAddress} <br />
                            Email: ${subject} <br />
-                           Cell no.: ${cellNumber}`;
+                           Cell no.: ${cellNumber} <br />
+                           Message: ${commentMsg}`;
 
         window.Email.send({
             Host : "smtp.elasticemail.com",
@@ -54,9 +58,10 @@
         contact: string().required(),
         email: string().required().email(),
         subject: string().required(),
+        message: string().required()
     });
 
-    const initialValues = { name: "", email: "", contact: "", subject: "" };
+    const initialValues = { name: "", email: "", contact: "", subject: "", message: "" };
 </script>
 
 <template>
@@ -68,10 +73,7 @@
                 <VInputField name="email" type="email" placeholder="Email address" />
                 <VInputField name="contact" type="text" placeholder="Contact number" />
                 <VInputField name="subject" type="text" placeholder="Subject" />
-                
-                <div class="input-wrapper">
-                    <textarea name="message" class="form-textarea" rows="8" placeholder="Message"></textarea>
-                </div>
+                <VTextArea name="message" :rows="8" placeholder="Message"/>
 
                 <div class="success" v-if="state.success"> 
                     <h3 class="black">Message sent!</h3>
