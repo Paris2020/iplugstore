@@ -28,7 +28,7 @@
             li {
                 a { 
                     color: var(--color-white);
-
+                    
                     @include break-point(mobile) {
                         color: var(--color-black);
                     }
@@ -135,7 +135,7 @@
         display: flex;
         align-items: center;
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         @include break-point(mobile) {
             position: fixed;
@@ -186,6 +186,10 @@
 
                 &:hover {
                     color: var(--link-hover);
+
+                    @include break-point(mobile) {
+                        color: var(--color-white);
+                    }
                 }
             }
         }
