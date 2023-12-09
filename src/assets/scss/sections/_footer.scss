@@ -8,6 +8,10 @@
         justify-content: center;
         flex-direction: column;
 
+        @include break-point(mobile) {
+            padding: 0 3.5rem;
+        }
+
         .socials {
             @include break-point(mobile) {
                 margin-bottom: 2rem;
