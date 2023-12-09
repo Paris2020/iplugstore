@@ -38,7 +38,7 @@
 <template>
     <nav class="navigation" :class="[{'isExpanded': state.isExpanded}, {'sticky': state.scrollPos > 70}]" ref="target">
         <div class="wrapper">
-            <img class="logo" src="images/logo.png" width="40" alt="iPlugStore logo">
+            <a href="/"><img class="logo" src="images/logo.png" width="40" alt="iPlugStore logo"></a>
             <ul class="menu">
                 <li><a href="#" v-scroll-to="'.about'">About us</a></li>
                 <li><a href="#" v-scroll-to="'.clients'">Clients</a></li>

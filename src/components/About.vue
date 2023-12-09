@@ -10,7 +10,7 @@
                 id: 0,
                 count: 250,
                 icon: "mobile",
-                description: "Sold"
+                description: "Sold over"
             },
             {
                 id: 1,
@@ -22,7 +22,7 @@
                 id: 2,
                 count: 310,
                 icon: "customer",
-                description: "Customers"
+                description: "Plus customers"
             }
         ]
     })
