@@ -1,5 +1,6 @@
 .clients {
     padding-bottom: 15rem;
+    padding-top: 15rem;
 
     @include break-point(tablet-landscape) {
         padding-bottom: 6rem;
@@ -69,8 +70,8 @@
             }
 
             &:nth-of-type(1) {
-                top: 0;
-                right: 10rem;
+                top: -2rem;
+                right: 24rem;
 
                 @include break-point(tablet-landscape) {
                     right: 2rem;
@@ -93,7 +94,8 @@
                 }
 
                 .avatar {
-                    right: -2rem;
+                    right: -31rem;
+                    top: -14rem;
 
                     @include break-point(tablet-landscape) {
                         right: 17rem;
@@ -108,7 +110,7 @@
 
             &:nth-of-type(2) {
                 bottom: 20rem;
-                left: 32rem;
+                left: 2rem;
 
                 @include break-point(tablet-portrait) {
                     bottom: -10rem;
@@ -119,7 +121,7 @@
                 }
 
                 .popup {
-                    left: -49rem;
+                    left: 0;
 
                     @include break-point(tablet-landscape) {
                         left: -30rem;
@@ -127,6 +129,9 @@
                 }
 
                 .avatar {
+                    top: -13.5rem;
+                    left: 29rem;
+
                     @include break-point(tablet-landscape) {
                         top: -11.5rem;
                         left: -30rem;
@@ -135,8 +140,8 @@
             }
 
             &:nth-of-type(3) {
-                bottom: -8rem;
-                left: 63rem;
+                bottom: -12rem;
+                left: 50rem;
                 
                 @include break-point(mobile) {
                     bottom: -45.5rem;
@@ -144,7 +149,7 @@
                 }
                 
                 .popup {
-                    top: 8rem;
+                    top: 2rem;
 
                     @include break-point(tablet-landscape) {
                         top: -2rem;
@@ -157,6 +162,9 @@
                 }
 
                 .avatar {
+                    right: -29rem;
+                    bottom: 12rem;
+
                     @include break-point(tablet-landscape) {
                         top: -13.5rem;
                         right: 0;

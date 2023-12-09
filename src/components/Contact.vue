@@ -28,7 +28,7 @@
         Email.send({
             Host : "smtp.elasticemail.com",
             Username : "dineo06.moseki@gmail.com",
-            Password : `AEFF8465F15A19BC63CEDB76E894D69FA06C`,
+            Password : `AEFF8465F15A19BC63CEDB76E894D69FA06C`, //temp
             To : 'llebohang600@gmail.com',
             From : `${fullName} - ${emailAddress}, ${cellNumber}`,
             Subject : `${subject}`,
