@@ -41,7 +41,8 @@
         }
 
         .burger {
-            
+            margin-bottom: 0;
+
             span {
                 background: var(--color-white);
 
@@ -66,6 +67,7 @@
         @include break-point(mobile) {
             display: flex;
             visibility: visible;
+            margin-bottom: 2rem;
         }
 
         span {
@@ -110,10 +112,23 @@
             transition: all 0.2s ease-in-out;
             width: 46rem;
             height: 28%;
+
+            li {
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+
+                    a {
+                        color: var(--color-black);
+
+                        &:hover {
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
         }
 
         .burger {
-            margin-bottom: 1rem;
 
             span {
                 background: transparent;
