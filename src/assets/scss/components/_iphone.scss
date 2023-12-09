@@ -66,15 +66,27 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border-radius: .6rem;
+                background-color: transparent;
+                transition: all ease-in-out .2s;
     
                 svg {
                     width: 2.4rem;
                     height: 2.4rem;
-                    fill: var(--color-white);
+                    fill: var(--color-black);
+                    transition: all ease-in-out .2s;
+                }
+
+                &:hover, &:focus {
+                    background-color: var(--color-black);
+                    
+                    svg {
+                        fill: var(--color-white) ;
+                    }
                 }
             }
 
-            .count-wrap {
+            /*.count-wrap {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -87,7 +99,7 @@
                         fill: var(--color-white);
                     }
                 }
-            }
+            }*/
         }
     }
 }
