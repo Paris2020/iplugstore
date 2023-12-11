@@ -32,7 +32,7 @@
     <div class="iphone" v-for="(phone, index) in props.iPhones">
         <picture>
             <source media="(min-width: 601px)" :srcset="`/images/iphones/${phone.image}.jpeg`">
-            <img :src="`/images/iphones/${phone.image}.jpeg`" width="300" :alt="`iPhone Image ${phone.index}`" />
+            <img :src="`/images/iphones/${phone.image}.jpeg`" width="300" :alt="`${phone.title}`" />
         </picture>
 
         <div class="description">
