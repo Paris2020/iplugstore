@@ -3,6 +3,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    img {
+        object-fit: cover;
+        width: 30rem;
+        height: auto;
+    }
 
     .description {
         display: flex;
@@ -27,7 +33,7 @@
                 margin-bottom: 1.5rem;
 
                 @include break-point(tablet-portrait) {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     line-height: 2.2rem;
                 }
             }
