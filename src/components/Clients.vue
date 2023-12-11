@@ -34,7 +34,7 @@ import { reactive } from "vue";
     <section class="clients">
         <div class="wrapper">
             <div class="big-circle">
-                <img src="/images/iplugstore-full-logo.png" width="350" class="iplugstore-tagline" alt="iPlugStore">
+                <img src="/images/social.png" width="350" class="iplugstore-tagline" alt="iPlugStore">
             </div>
             <div class="clients-wrap">
                 <client-comment :clients="state.clients"/>

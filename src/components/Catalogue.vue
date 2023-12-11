@@ -18,7 +18,7 @@
             <div class="products">
                 <phone-card :iPhones="products"/>
             </div>
-            <a href="/files/product-list.pdf" target="_blank" class="btn small unclear">view more</a>
+            <a href="/files/price-list-2023.jpeg" target="_blank" class="btn small unclear">view more</a>
         </div>
     </section>
 </template>
