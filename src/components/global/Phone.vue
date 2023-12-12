@@ -41,7 +41,7 @@
                 <dd class="price">{{ phone.price }} ZAR</dd> 
             </dl>
             <div class="interact">
-                <a :href="`/#catalogue/${phone.image}`" @click="copyLink(`/#catalogue/${phone.image}`)"><icon name="copy" /></a>
+                <a :href="`/.catalogue/${phone.image}`" @click="copyLink(`/#catalogue/${phone.image}`)"><icon name="copy" /></a>
                 <!--<span class="count-wrap">
                     {{ phone.likes }}
                     <icon name="heart" :id="phone.id" @click="incrementLikes(index)"/>
