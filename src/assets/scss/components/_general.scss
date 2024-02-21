@@ -41,11 +41,16 @@ section {
 }
 
 .wrapper {
-	width: 144rem;
+	//width: 144rem;
+	width: 150rem;
 	padding: 0 4rem;
 	margin: 0 auto;
 	z-index: 2;
 	position: relative;
+
+	@media (min-width: 1025px) {
+		width: 100%;
+	}
 
 	@include break-point(tablet-landscape) {
 		padding: 0 2rem;
@@ -169,10 +174,6 @@ ul,ol {
 		border: .2rem solid var(--color-dark-blue);
 
 		&:hover {
-			/*color: var(--color-dark-blue);
-			background-color: transparent;
-			border: .2rem solid var(--color-dark-blue);*/
-
 			color: var(--color-white);
 			background-color: var(--color-dark-blue);
 			border: .2rem solid var(--color-dark-blue);
