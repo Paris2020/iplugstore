@@ -10,21 +10,6 @@
 		state.isExpanded = !state.isExpanded;
 	}
 
-    // STICKY MENU
-    /*const target = ref();
-    const sticky = ref(false);
-
-    const observer = new IntersectionObserver(
-        ([entry]) => { 
-            sticky.value = !entry.isIntersecting; 
-        },
-        { threshold: 0.0 }
-    );
-
-    onMounted(() => {
-        observer.observe(target.value);
-    }); */
-
     const updateScroll = () => {
         state.scrollPos = window.scrollY;
     }

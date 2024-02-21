@@ -1,6 +1,5 @@
 <script setup>
-    import { reactive, onMounted } from "vue";
-    import Icon from "./global/Icon.vue";
+    import { reactive } from "vue";
     import CardBox from "../components/global/Card.vue";
     import LiteYouTubeEmbed from 'vue-lite-youtube-embed';
 
