@@ -7,7 +7,7 @@ iPlugSore is a project built using Vue. It's a platform to purchase pre-owned iP
 
 ### Built With:
 
-- **VueJS:** Core logic and interactions.
+- **Vue:** Core logic and interactions.
 - **SCSS:** Styling
 
 
